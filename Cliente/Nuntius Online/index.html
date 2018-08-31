@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <title>Nuntius_Online</title>
+
+    <script src="js/angular.min.js"></script>
+    <script src="/js/socketsSample.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div ng-app="NuntiusApp" ng-controller="NuntiusCtrl">
+ <form name="LogForm">
+    User Name: <input name="UserInput" type="text" ng-model="user" required><br>
+    <button ng-show="LogForm.UserInput.$valid" ng-click="LogMe()">Log in</button>
+
+ </form>
+        
+        <br>
+        {{recivido}}
+    </div>
+
+    
+
+</body>
+</html>
